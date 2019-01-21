@@ -1,0 +1,391 @@
+/*登录页*/
+.layout, 
+.layout-main,
+.view-container, 
+html, 
+body {
+    height: 100%;
+}
+#app {
+    height: 100%;
+}
+.login-warp {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    min-width: 630px;
+    background: url("../images/login-bg.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.login-warp .login-title .logo {
+    float: left;
+    width: 168px;
+    height: 32px;
+    border-right: 1px solid #e5e5e5;
+    background: url("../images/ywm-logo.svg") no-repeat center;
+    cursor: pointer;
+}
+.login-warp .login-title .login span {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1; /* Fix for IE7 */
+    *display: inline; /* Fix for IE7 */;
+    width: 24px;
+    height: 24px;
+    margin: 4px 5px 0 0;
+    background: url("../images/ywm-icon.png") no-repeat center;
+    background-position: 0px -23px;
+    background-size: 80px 310px;
+}
+/*结构*/
+.view-container .view-title {
+    height: 60px;
+    padding-left: 40px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 60px;
+    color: #333;
+    box-shadow: inset 0 -1px 0 0 #DDDDDD;
+}
+.view-title span {
+    padding-left: 6px;
+    font-size: 14px;
+    color: #9E9E9E;
+}
+.view-title-second {
+    overflow: hidden;
+    margin: 9px 0 24px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.view-title-second h3 {
+    float: left;
+    height: 28px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 28px;
+    color: #333;
+}
+.view-container .container-main {
+    padding: 76px 40px 0;
+    margin-top: -60px;
+    min-height: 100%;
+}
+.mail-icon:after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    width: 21px;
+    height: 21px;
+    margin-right: 5px;
+    background: url("../images/icon-mail.png") no-repeat center;
+}
+.main-footer-btn {
+    position: fixed;
+    left: 200px;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    padding: 11px 40px 0;
+    text-align: right;
+    background: #FFFFFF;
+    box-shadow: 0 -2px 4px 0 rgba(0,0,0,0.10);
+    z-index: 999;
+}
+.main-footer-btn button {
+    margin-left: 8px;
+}
+.main-search-box {
+    position: relative;
+    padding: 20px 90px 0;
+    margin-bottom: 16px;
+    border: 1px solid #e5e5e5;
+    background-color: #fdfdfd;
+    border-radius: 4px;
+}
+.main-search-box.up {
+    height: 68px;
+}
+.main-search-title {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #333;
+}
+.search-show-btn-up, 
+.search-show-btn-down {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #757575;
+    cursor: pointer;
+}
+.search-show-btn-up span, 
+.search-show-btn-down span {
+    display: inline-block;
+    vertical-align: top;
+    width: 12px;
+    height: 12px;
+    margin: 8px 0 0 5px;
+    background: url("../images/search-icon.png") no-repeat center;
+}
+.search-show-btn-down span {
+    background-position: 0px -12px;
+}
+.search-show-btn-up span {
+    background-position: 0px 0px;
+}
+.main-content-item {
+    margin-bottom: 40px;
+}
+.main-content-item-tit {
+    height: 22px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #333;
+}
+.main-message-list {
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+}
+.main-message-list-main, 
+.main-message-list-tit {
+    overflow: hidden;
+    padding: 0px 12px;
+}
+.main-message-list-tit {
+    background-color: #fafafb;
+    border-bottom: 1px solid #e6e6e6;
+}
+.main-message-list-main li, 
+.main-message-list-tit li {
+    float: left;
+    width: 10%;
+    padding: 9px 10px 13px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333;
+}
+.home-down-icon,
+.home-up-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 8px;
+    height: 5px;
+    margin-right: 5px;
+    background: url("../images/home-icon.png") no-repeat center;
+}
+.home-up-icon {
+    background-position: 0px -5px;
+}
+.home-down-icon {
+    background-position: 0px 0px;
+}
+/*按钮*/
+.edit-btn {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../images/icon-btn.png") no-repeat center;
+    background-position: 0px -14px;
+    cursor: pointer;
+}
+.edit-btn:hover {
+    background-position: 0px 0px;
+}
+.cancel-btn {
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    background: url("../images/icon-btn.png") no-repeat center;
+    background-position: 0px -44px;
+    cursor: pointer;
+}
+.cancel-btn:hover {
+    background-position: 0px -30px;
+}
+.record-btn {
+    /*display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../images/icon-btn.png") no-repeat center;
+    background-position: 0px -98px;
+    cursor: pointer;*/
+    display: inline-block;
+    width: 13px;
+    height: 14px;
+    background: url("../images/icon-btn.png") no-repeat center;
+    background-position: 0px -14px;
+    cursor: pointer;
+}
+.record-btn:hover {
+    /*background-position: 0px -84px;*/
+    background-position: 0px 0px;
+}
+.undercarriage-btn {
+    display: inline-block;
+    width: 11px;
+    height: 14px;
+    background: url("../images/icon-btn.png") no-repeat center;
+    background-position: 0px -70px;
+    cursor: pointer;
+}
+.undercarriage-btn:hover {
+    background-position: 0px -56px;
+}
+/*.rule-record-btn {
+    display: inline-block;
+    width: 13px;
+    height: 14px;
+    background: url("../images/icon-btn.png") no-repeat center;
+    background-position: 0px -126px;
+    cursor: pointer;
+}
+.rule-record-btn:hover {
+    background-position: 0px -112px;
+}*/
+.delete-btn {
+    display: inline-block;
+    width: 11px;
+    height: 14px;
+    background: url("../images/icon-btn.png") no-repeat center;
+    background-position: 0px -154px;
+    cursor: pointer;
+}
+.delete-btn:hover {
+    background-position: 0px -140px;
+}
+.invite-word-btn {
+    display: inline-block;
+    height: 28px;
+    padding: 0px 12px;
+    border: 1px solid #55A8FD;
+    font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+    color: #65B8FE;
+    background: #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.invited-word-btn {
+    display: inline-block;
+    padding: 0px 12px;
+    height: 28px;
+    border: 1px solid #D9D9D9;
+    font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+    color: rgba(0,0,0,0.25);
+    background: #F7F7F7;
+    border-radius: 4px;
+}
+.remove-word-btn {
+    display: inline-block;
+    height: 28px;
+    padding: 0px 12px;
+    border: 1px solid #D9D9D9;
+    font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+    color: rgba(0,0,0,0.65);
+    background: #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.refuse-word-btn, 
+.agree-word-btn {
+    display: inline-block;
+    padding: 0px 12px;
+    height: 28px;
+    margin: 0 4px;
+    font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.agree-word-btn {
+    border: 1px solid #55A8FD;
+    color: #65B8FE;
+}
+.refuse-word-btn {
+    border: 1px solid #D9D9D9;
+    color: rgba(0,0,0,0.65);
+}
+/*图片上传*/
+.upload-photo-item {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+.upload-photo-item .photo-content {
+    width: 96px;
+    height: 106px;
+    padding-top: 20px;
+    background-color: #fbfbfb;
+}
+.upload-photo-item .photo-msg {
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    color: #333;
+}
+.upload-photo-item .photo-icon {
+    width: 28px;
+    height: 28px;
+    margin: 0px auto 12px;
+    background: url("../images/upload.png") no-repeat center;
+    background-position: 0px -28px;
+}
+.upload-photo-item .photo-content:hover .photo-icon {
+    background-position: 0px 0px;
+}
+.upload-photo-item p {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: rgba(0,0,0,0.65);
+}
+.upload-photo-item .photo-list {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    right: 1px;
+    bottom: 30px;
+    background-color: #fff;
+}
+.upload-photo-item .photo-list img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.upload-photo-item .photo-list .upload-list-cover {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.6);
+    text-align: center;
+}
+.upload-photo-item .photo-list:hover .upload-list-cover {
+    display: block;
+}
+.upload-photo-item .upload-list-cover i{
+    font-size: 20px;
+    line-height: 106px;
+    color: #fff;
+    cursor: pointer;
+}

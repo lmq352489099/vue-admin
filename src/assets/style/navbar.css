@@ -1,0 +1,249 @@
+.nav-box {
+    position: relative;
+    height: 100%;
+}
+.nav-box .logo {
+    padding: 19px 0 18px;
+    text-align: center;
+}
+.nav-box .logo img {
+    display: block;
+    margin: 0 auto;
+}
+.hosp-msg {
+    height: 149px;
+    padding: 20px 20px 0;
+    overflow: hidden;
+}
+.hosp-msg img {
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 4px;
+    border-radius: 6px;
+}
+.hosp-msg p {
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    color: #7685B6;
+}
+.navbar {
+    position: absolute;
+    top: 209px;
+    left: 0;
+    right: 0;
+    bottom: 52px;
+    overflow: hidden;
+}
+.navbar-scroll {
+    width: 220px;
+    height: 100%;
+    overflow-y: scroll;
+}
+.nav-tree {
+    width: 200px;
+}
+.nav-tree .nav-meun {
+    display: block;
+    position: relative;
+    list-style: none;
+}
+.nav-tree .nav-menu-item1 .menu-item-title1 {
+    padding: 0 20px 0 53px;
+    height: 50px;
+    cursor: pointer;
+}
+.nav-tree .nav-menu-item ul {
+    height: 0;
+    overflow: hidden;
+}
+.nav-menu-item .menu-item-title {
+    padding: 0 20px;
+    height: 50px;
+    cursor: pointer;
+}
+.nav-menu-item .menu-item-title span {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 15px 13px 0 0;
+    background: url("../images/icon.png") no-repeat center;
+}
+.nav-tree .menu-item-title1 h3, 
+.nav-menu-item .menu-item-title h3 {
+    float: left;
+    line-height: 50px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #7685B6;
+}
+.nav-tree .menu-item-title1 em, 
+.nav-menu-item .menu-item-title em {
+    float: right;
+    width: 6px;
+    height: 12px;
+    margin-top: 19px;
+    background: url("../images/icon.png") no-repeat center;
+    background-position: -43px -12px;
+}
+.nav-menu-item .menu-item-title .down {
+    width: 12px;
+    height: 6px;
+    margin-top: 22px;
+    background-position: -40px -3px;
+}
+.login-out {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 52px;
+    padding: 16px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #7685B6;
+    cursor: pointer;
+}
+.login-out span {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    background: url("../images/icon.png") no-repeat center;
+    background-position: 0px -240px;
+}
+.nav-menu-item .menu-item-title1:hover, 
+.nav-menu-item.open .menu-item-title, 
+.nav-menu-item .menu-item-title:hover {
+    background-color: #55A8FD;
+}
+.nav-menu .nav-menu-item.active {
+    background-color: #161D33;
+}
+.nav-menu .nav-menu-item.active .do {
+    background-color: #55A8FD;
+}
+.nav-menu .nav-menu-item.active .do h3, 
+.nav-menu-item .menu-item-title1:hover h3, 
+.nav-menu-item.open .menu-item-title h3, 
+.nav-menu-item .menu-item-title:hover h3 {
+    color: #fff;
+}
+.nav-menu .nav-menu-item.active .do em, 
+.nav-menu-item .menu-item-title1:hover em, 
+.nav-menu-item.open .menu-item-title em, 
+.nav-menu-item .menu-item-title:hover em {
+    background-position: -43px -24px;
+}
+.nav-menu-item .menu-item-title:hover .down {
+    background-position: -40px -3px;
+}
+.nav-menu-item .menu-item-title .sendMsg {
+    background-position: 0 0;
+}
+.nav-menu-item.open .menu-item-title .sendMsg, 
+.nav-menu-item .menu-item-title:hover .sendMsg {
+    background-position: -20px 0;
+}
+.nav-menu-item .menu-item-title .msgHist {
+    background-position: 0 -20px;
+}
+.nav-menu-item.open .menu-item-title .msgHist, 
+.nav-menu-item .menu-item-title:hover .msgHist {
+    background-position: -20px -20px;
+}
+.nav-menu-item .menu-item-title .msgList {
+    background-position: 0 -40px;
+}
+.nav-menu-item.open .menu-item-title .msgList, 
+.nav-menu-item .menu-item-title:hover .msgList {
+    background-position: -20px -40px;
+}
+.nav-menu-item .menu-item-title .userMsg {
+    background-position: 0 -60px;
+}
+.nav-menu-item.open .menu-item-title .userMsg, 
+.nav-menu-item .menu-item-title:hover .userMsg {
+    background-position: -20px -60px;
+}
+.nav-menu-item .menu-item-title .user {
+    background-position: 0 -80px;
+}
+.nav-menu-item.open .menu-item-title .user, 
+.nav-menu-item .menu-item-title:hover .user {
+    background-position: -20px -80px;
+}
+.nav-menu-item .menu-item-title .customer {
+    background-position: 0 -100px;
+}
+.nav-menu-item.open .menu-item-title .customer, 
+.nav-menu-item .menu-item-title:hover .customer {
+    background-position: -20px -100px;
+}
+.nav-menu-item .menu-item-title .treatment {
+    background-position: 0 -120px;
+}
+.nav-menu-item.open .menu-item-title .treatment, 
+.nav-menu-item .menu-item-title:hover .treatment {
+    background-position: -20px -120px;
+}
+.nav-menu-item .menu-item-title .product {
+    background-position: 0 -180px;
+}
+.nav-menu-item.open .menu-item-title .product, 
+.nav-menu-item .menu-item-title:hover .product {
+    background-position: -20px -180px;
+}
+.nav-menu-item .menu-item-title .report {
+    background-position: 0 -160px;
+}
+.nav-menu-item.open .menu-item-title .report, 
+.nav-menu-item .menu-item-title:hover .report {
+    background-position: -20px -160px;
+}
+.nav-menu-item .menu-item-title .hosp {
+    background-position: 0 -160px;
+}
+.nav-menu-item.open .menu-item-title .hosp, 
+.nav-menu-item .menu-item-title:hover .hosp {
+    background-position: -20px -160px;
+}
+.nav-menu-item .menu-item-title .count {
+    background-position: 0 -200px;
+}
+.nav-menu-item.open .menu-item-title .count, 
+.nav-menu-item .menu-item-title:hover .count {
+    background-position: -20px -200px;
+}
+.nav-menu-item .menu-item-title .home {
+    background-position: 0 -220px;
+}
+.nav-menu-item.open .menu-item-title .home, 
+.nav-menu-item .menu-item-title:hover .home {
+    background-position: -20px -220px;
+}
+.nav-menu-item .menu-item-title .statistics {
+    background-position: 0 -60px;
+}
+.nav-menu-item .menu-item-title:hover .statistics {
+    background-position: -20px -60px;
+}
+.record {
+    display: none !important;
+}
+.nav-menu-item .menu-item-title .lacita {
+    background-image:url('../images/lacite.png') ;
+    background-size: 120% 120%
+}
+.nav-menu-item .menu-item-title:hover .lacita {
+    background-image:url('../images/lacitee.png');
+}
+.nav-menu-item .menu-item-title .miniapps {
+    background-image:url('../images/mini.png') ;
+    background-size: 120% 120%
+}
+.nav-menu-item .menu-item-title:hover .miniapps {
+    background-image:url('../images/minii.png');
+}

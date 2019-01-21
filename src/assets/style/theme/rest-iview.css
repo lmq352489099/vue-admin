@@ -1,0 +1,231 @@
+/**
+ * css 样式重置，针对重置变量无法完成的css
+ * 
+ */
+
+/********************
+卡片tabs样式重置        
+********************/
+.ivu-tabs-bar {
+    padding-top: 14px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0px;
+}
+.ivu-tabs-card .ivu-tabs-tab {
+    font-size: 16px;
+    color: #333;
+}
+.ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-tab {
+    min-width: 107px;
+    height: 46px;
+    padding: 10px 16px;
+    margin-right: 6.5px;
+    border: 1px solid #DBDBDB;
+    text-align: center;
+    background: #F4F4F4;
+}
+.ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab-active {
+    height: 47px;
+    background: #fff;
+}
+.ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-nav-container {
+    height: 46px;
+    padding-left: 20.5px;
+}
+
+
+/********************
+按钮样式重置        
+********************/
+.ivu-btn {
+    min-width: 68px;
+    padding: 4px 14px;
+}
+.ivu-btn-primary {
+    background-color: #55A8FD;
+    border-color: #55A8FD;
+}
+.ivu-btn-group:not(.ivu-btn-group-vertical) .ivu-btn-primary+.ivu-btn {
+    border-left-color: #55A8FD;
+}
+.ivu-btn-group:not(.ivu-btn-group-vertical) .ivu-btn-primary:first-child:not(:last-child), 
+.ivu-btn-group:not(.ivu-btn-group-vertical) .ivu-btn-primary:not(:first-child):not(:last-child) {
+    border-color: #55A8FD;
+}
+
+/********************
+表格样式重置        
+********************/
+.ivu-table-wrapper {
+    border: 0;
+}
+.ivu-table:before {
+    height: 0;
+}
+.ivu-table:after {
+    width: 0;
+}
+.ivu-table th {
+    height: 50px;
+    font-weight: 500;
+    background-color: #fff;
+    border-bottom: 1px solid #C5C6C7;
+}
+.ivu-table td {
+    height: 44px;
+    border-bottom: 1px solid #F0F1F2;
+}
+.ivu-table th, 
+.ivu-table td {
+    font-size: 14px;
+    color: #333;
+}
+tr.ivu-table-row-hover td {
+    background-color: #f9f9f9;
+}
+.ivu-table-wrapper>.ivu-spin-fix {
+    border: none;
+}
+
+
+/*内容页表格*/
+.main-table {
+    border: 1px solid #e6e6e6;
+    border-bottom: 0;
+    border-right: 0;
+}
+.main-table .ivu-table:before {
+    height: 1px;
+    background-color: #e6e6e6;
+}
+.main-table .ivu-table:after {
+    width: 1px;
+    background-color: #e6e6e6;
+}
+.main-table th {
+    height: 40px;
+    font-weight: 500;
+    background-color: #fafafb;
+    border-bottom: 1px solid #e6e6e6;
+}
+.main-table td {
+    height: 40px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.main-table>.ivu-spin-fix {
+    border: 1px solid #e6e6e6;
+    border-top: 0;
+    border-left: 0;
+}
+
+/********************
+表单样式重置        
+********************/
+.ivu-form-item {
+    margin-bottom: 20px;
+}
+.ivu-form-item-error-tip {
+    padding-top: 4px;
+}
+.ivu-form .ivu-form-item-label {
+    padding: 7px 12px 7px 20px;
+    font-size: 14px;
+    color: #757575;
+}
+.ivu-form-item-required .ivu-form-item-label:before {
+    color: #55A8FD;
+}
+.ivu-form-item-content {
+    line-height: 28px;
+}
+.ivu-input-icon {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+}
+.ivu-input-icon-normal+.ivu-input {
+    padding-right: 28px;
+}
+.ivu-input-number-input-wrap, 
+.ivu-input, 
+.ivu-select-single .ivu-select-selection {
+    height: 28px;
+}
+.ivu-input-number, 
+.ivu-input-number-input, 
+.ivu-select-single .ivu-select-selection .ivu-select-placeholder, 
+.ivu-select-single .ivu-select-selection .ivu-select-selected-value {
+    height: 28px;
+    line-height: 28px;
+}
+.ivu-input-number-handler {
+    height: 14px;
+}
+
+
+/********************
+弹窗样式重置        
+********************/
+.ivu-modal {
+    top: 0;
+}
+.vertical-center-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vertical-center-modal .ivu-modal-body {
+    background-color: #fbfbfb;
+}
+.vertical-center-modal .ivu-modal-header-inner {
+    text-align: center;
+    font-weight: normal;
+    color: #666;
+}
+
+
+/********************
+分页样式重置        
+********************/
+.ivu-page {
+    text-align: center;
+    padding: 28px 0;
+}
+.ivu-page-item-active {
+    background-color: #55A8FD;
+    border-color: #55A8FD;
+}
+.ivu-page-item:hover {
+    border-color: #55A8FD;
+}
+.ivu-page-total {
+    height: 28px;
+    line-height: 28px;
+}
+.ivu-page-item, 
+.ivu-page-item-jump-next, 
+.ivu-page-item-jump-prev, 
+.ivu-page-next, 
+.ivu-page-prev {
+    min-width: 28px;
+    height: 28px;
+    line-height: 26px;
+}
+
+
+/********************
+多选框样式重置        
+********************/
+.ivu-checkbox-checked .ivu-checkbox-inner {
+    border-color: #55A8FD;
+    background-color: #55A8FD;
+}
+
+
+/********************
+开关样式重置        
+********************/
+.ivu-switch-checked {
+    border-color: #55A8FD;
+    background-color: #55A8FD;
+}
